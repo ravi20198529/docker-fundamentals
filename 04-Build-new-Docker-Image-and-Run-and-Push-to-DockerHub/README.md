@@ -16,10 +16,17 @@ docker stop mynginxdefault
 
 ## Step-2: Create Dockerfile and copy our customized index.html
 - **Dockerfile**
+cd /Users/raviprajapati/documents
+mkdir nginx-image
+cd nginx-image/
+vi Dockerfile
+paster the below lines
 ```
 FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
+vi index.html
+"write your content"
 
 ## Step-3: Build Docker Image & run it
 ```
